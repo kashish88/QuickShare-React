@@ -1,8 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import './Post.css'
 import Avatar from '@material-ui/core/Avatar'
-import {db,storage} from './firebase';
-import firebase from "firebase"
+import {db} from './firebase';
 import DeleteIcon from '@material-ui/icons/Delete';
 function Post({postId,user,username,caption,imageUrl}) {
 
@@ -97,7 +96,7 @@ const handleDelete=()=>{
             <h3>{username}</h3>
                <DeleteIcon className="d" onClick={handleDelete}/>
             </div>
-            <img className="post_image"src={imageUrl}></img>
+            <img className="post_image"src={imageUrl} alt=""></img>
             <h4 className="post_text"><strong>{username}</strong>  {caption}</h4>
 
            <div className="post_comments">
