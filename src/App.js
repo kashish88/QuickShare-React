@@ -69,6 +69,7 @@ function App() {
         const unsubscribed = auth.onAuthStateChanged((authUser) => {
             if (authUser) {
                 console.log(authUser)
+                console.log('User ID:', authUser.uid);
                 setUser(authUser)
             }
             else {
@@ -208,7 +209,7 @@ function App() {
 
             <div className="app_header">
                 <img className="app_headerImage"
-                    src="https://cdn.worldvectorlogo.com/logos/instagram-1.svg"
+                    src="img/Quick Share.png"
                     alt=""
                 >
                 </img>
@@ -231,7 +232,7 @@ function App() {
 
                     {
                         posts.map(({ id, post }) => (
-                            <Post key={id} postId={id} user={user} username={post.username} caption={post.caption} imageUrl={post.imageUrl}></Post>
+                            <Post key={id} postId={id} user={user} userId={user ? user.uid : null} username={post.username} caption={post.caption} imageUrl={post.imageUrl}></Post>
                         ))
                     }
                 </div>
