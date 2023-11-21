@@ -138,7 +138,8 @@ function App() {
                     <form className="s">
                         <center>
                             <img className="app_headerImage"
-                                src="https://cdn.worldvectorlogo.com/logos/instagram-1.svg"
+                             style={{marginTop:'25px'}}
+                                   src="img/Quick Share.png"
                                 alt=""
                             >
                             </img>
@@ -179,7 +180,8 @@ function App() {
                     <form className="s">
                         <center>
                             <img className="app_headerImage"
-                                src="https://cdn.worldvectorlogo.com/logos/instagram-1.svg"
+                            style={{marginTop:'25px'}}
+                                   src="img/Quick Share.png"
                                 alt=""
                             >
                             </img>
