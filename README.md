@@ -1,3 +1,10 @@
+
+Deployed version of assignment - 
+
+For shifting to dark mode Please click on SUN icon in header
+For accessing Order page screen kindly navigate to /orders route by typing in URL on browser
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
